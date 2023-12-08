@@ -1,0 +1,4 @@
+---
+# vars file for app-pointer
+hash: "{{ lookup('password', '/dev/null chars=ascii_letters,digit length=8', seed=inventory_hostname) | lower }}"
+
